@@ -1,0 +1,41 @@
+Plumbing Prodigy Project Summary (Revised)
+Introduction
+Plumbing Prodigy is an innovative AI-assisted mobile app designed to provide professional plumbers with expert advice and solutions for plumbing repairs and issues in the field.
+
+Objectives
+Offer real-time, reliable, and easily accessible plumbing solutions and advice through a chat interface.
+Empower plumbers with a tool that increases their efficiency and confidence in problem-solving.
+Compile a comprehensive knowledge base for AI to draw assistance from.
+Create an intuitive and user-friendly interface for simplifying the complexity of plumbing troubleshooting.
+
+MVP Features
+Text-based communication allowing users to describe issues and receive AI-generated advice.
+Integration with an advanced natural language processing AI service for understanding inquiries and generating responses.
+A feedback mechanism for users to rate the advice for continuous AI improvement.
+Offline access to previously retrieved information and solutions.
+Search functionality for quickly finding past solutions and advice.
+
+Technical Stack
+Frontend: React Native
+Backend: Python with Django
+AI Integration: OpenAI ChatGPT
+Database: PostgreSQL
+Version Control: Git
+Deployment: Heroku
+
+Technical Aspects
+Django Framework: Adopt Django for its robustness, security features, and efficiency in developing complex web applications.
+Django Rest Framework: Leverage DRF for creating RESTful APIs to interface with the frontend.
+Database Integration: Utilize a relational database like PostgreSQL for its compatibility with Django and support for complex queries and data integrity.
+Security: Implement Django’s security features, including its user authentication system, protection against common vulnerabilities, and secure handling of user data.
+Scalability: Design with scalability in mind, considering aspects like caching, database optimization, and a scalable deployment solution.
+
+State Management
+Context API and Redux will be used for state management in the React Native app, ensuring a seamless user experience.
+
+Development Workflow
+Embrace a test-driven development (TDD) approach, utilizing Django’s testing framework.
+Continuous integration and deployment (CI/CD) pipeline to automate testing and deployment processes.
+
+Deployment Strategy
+Heroku: Our application will be deployed on Heroku, a cloud platform as a service (PaaS) that enables simple deployments and management of applications. Heroku’s support for containerization, scalable dynos, and add-ons, such as Heroku Postgres (fully managed SQL database service), makes it an ideal platform for Plumbing Prodigy. Heroku’s GitHub integration will streamline our continuous deployment process, allowing for automated builds and deployments upon code changes. The platform also offers easy scaling options, ensuring that Plumbing Prodigy can efficiently handle varying loads.

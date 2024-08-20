@@ -1,0 +1,61 @@
+Project File Structure 
+
+PlumbingProdigyFrontend/
+├── _tests_/                # Directory for unit or integration tests
+├── android/                # Android-specific files and configurations
+├── ios/                    # iOS-specific files and configurations
+├── node_modules/           # Node modules installed for the project
+├── src/
+│   ├── components/    # Reusable UI components
+│   │   └── ...        # Button, InputField, etc.
+│   ├── screens/       # Different screens of the application
+│   │   └── ...        # HomeScreen, DetailScreen, etc.
+│   ├── navigation/    # Navigation setup and configuration
+│   │   └── ...        # StackNavigator, TabNavigator, etc.
+│   ├── contexts/      # Context API providers for global state
+│   │   └── ...        # AuthContext, ThemeContext, etc.
+│   ├── hooks/         # Custom React hooks
+│   │   └── ...        # useAuth, useTheme, etc.
+│   ├── assets/        # Static assets like images and fonts
+│   │   └── ...        # logo.png, icons, etc.
+│   └── helpers/         # Utility and helper functions
+│       └── ...        # dateUtils, numberUtils, etc.
+├── .eslintrc.js            # ESLint configuration for linting the code
+├── .gitignore              # Specifies intentionally untracked files to ignore by Git
+├── .prettierrc.js          # Prettier configuration for code formatting
+├── .watchmanconfig         # Configuration for Watchman
+├── app.json                # Configuration for the React Native app
+├── App.tsx                 # Main React Native app component
+├── babel.config.js         # Babel configuration for JavaScript transpilation
+├── Gemfile                 # Ruby gem dependencies for CocoaPods on iOS
+├── index.js                # Entry point for registering the app component
+├── jest.config.js          # Jest configuration for testing
+├── metro.config.js         # Metro bundler configuration
+├── package.json            # Project metadata and dependencies
+├── package-lock.json       # Lock file automatically generated for any operations
+├── README.md               # Markdown file with introductory information for the project
+└── tsconfig.json           # TypeScript configuration
+
+
+PlumbingProdigyBackend/
+│
+├── node_modules/           # Node modules for project dependencies
+├── src/
+│   ├── controllers/   # Functions that handle HTTP requests
+│   │   └── ...        # userController, jobController, etc.
+│   ├── models/        # Database models for ORM
+│   │   └── ...        # User, Job, etc.
+│   ├── routes/        # API endpoint definitions
+│   │   └── ...        # userRoutes, jobRoutes, etc.
+│   │   └── plumbingAdviceRoutes.js        #plumbing advice at GET
+│   ├── middleware/    # Express middleware
+│   │   └── ...        # authMiddleware, errorMiddleware, etc.
+│   ├── services/      # Business logic
+│   │   └── ...        # authService, jobService, etc.
+│   └── helpers/       # Utility and helper functions
+│       └── ...        # tokenUtils, logger, etc.
+│   └── server.js      # server.js with express and code 
+│       
+│
+├── package.json            # Project metadata and dependencies for the backend
+└── package-lock.json       # Dependency tree for npm for the backend

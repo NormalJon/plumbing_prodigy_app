@@ -1,0 +1,72 @@
+# Plumbing Prodigy Project Summary
+
+## Introduction
+An AI-assisted mobile app designed to support professional plumbers by providing expert advice and solutions for plumbing repairs and issues in the field.
+
+## Objectives
+ - To offer real-time, reliable, and easily accessible plumbing solutions and advice through a chat interface.
+ - To empower plumbers with a tool that increases their efficiency and confidence in problem-solving.
+ - To compile a comprehensive knowledge base that the AI can draw from to provide assistance.
+ - To create an intuitive and user-friendly interface that simplifies the complexity of plumbing troubleshooting.
+
+## MVP Features
+ - Text-based communication allowing users to describe issues and receive AI-generated advice.
+ - Integration with ChatGPT or a similar AI service to leverage advanced natural language processing for understanding inquiries and generating responses.
+ - A feedback mechanism where users can rate the advice for continuous improvement of the AI's accuracy.
+ - Offline access to the app for situations where internet connectivity is limited, providing access to previously retrieved information and solutions.
+ - Search functionality enabling users to quickly find past solutions and advice they've received.
+
+## Technical Stack 
+- OS - Using Windows for Development 
+- Frontend: React Native
+- Backend: Python with Django
+- AI Integration: OpenAI ChatGPT
+- Version Control: Git
+- Using dotenv for security and storing data outside of view of nonn-ethical users 
+- nodemon used for updating code on dev server without having to reload
+- Postman will be used to API development, allowing us to send requests to web servers and APIs without needing to write code for each request
+
+## Technical Aspects 
+ - The app is being developed for both iOS and Android using React Native, enabling a single codebase to target both platforms efficiently.
+   The backend, built with Node.js and Express, will handle API interactions and potentially user management, along with other server-side logic.
+ - A MongoDB database could be used to store user interactions, feedback, and the knowledge base, although the exact database technology has not been finalized.
+   Git is being used for version control to manage the codebase, track changes, and facilitate collaboration.
+ - We are adhering to best practices in software development, including clean code principles, regular commits, proper documentation, and a focus on security, especially regarding user data.
+ - **State Management**: One of the crucial aspects we've discussed and decided upon is how we're going to manage the application's state. State management is vital in React Native as it determines how the app behaves and how the UI is rendered in response to user actions or system events.
+    - **Context API**: We decided to utilize React's Context API for certain parts of our app. The Context API is a React structure that enables us to share specific forms of data across all levels of the application without having to pass props down manually at every level. This method is particularly suitable for passing down data without prop drilling, making it easier to manage global states that don't require the more dynamic capabilities of Redux. It's an excellent choice for themes, authentication status, and similar data.
+    - **Redux**: For more complex state management needs, such as handling diverse states that are interdependent or managing states that need to be accessed by many parts of the application in a more controlled manner, we've opted to use Redux. Redux will help us maintain a predictable state container, making the app more manageable and scalable as it grows. Its use of actions and reducers will allow us to efficiently manage the state across different components and ensure a consistent and predictable state throughout the app.
+
+As of our last session, we have successfully set up the foundational elements of the Plumbing Prodigy app, which includes configuring the development environment and establishing the project structure. Here is a breakdown of our achievements:
+
+- **Project Structure**: We have created the main project directory `plumbing_prodigy` which includes two crucial subdirectories:
+  - `frontend`: This will contain our React Native application. We initiated a fresh React Native project in this directory to create a cross-platform mobile application.
+  - `backend`: This is designated for our Node.js server application. While the directory has been created, we have yet to initialize the Node.js environment and install Express.
+
+- **Development Environment**:
+  - On the frontend, we've confirmed that the Metro bundler runs successfully, indicating that the React Native environment is properly set up and ready for further development.
+  - On the backend, we have identified the technology (Node.js with Express) to be used and are prepared to initialize it in the `backend` directory.
+
+- **Version Control**:
+  - We have discussed the importance of using Git for version control and have plans to initialize a Git repository within our project root to track changes and facilitate collaboration.
+
+- **Documentation**:
+  - We agreed on the creation of a `docs` directory to maintain our project documentation, ensuring that all team members have access to up-to-date information and a clear understanding of the project's progress.
+
+### Accomplishments
+- Defined the app concept and its primary user base.
+- Identified and outlined the key MVP features necessary for the initial launch.
+- Chose React Native for frontend development to accommodate both iOS and Android platforms.
+- Agreed on Node.js with Express for backend development, providing a lightweight and efficient server solution.
+- Began the setup of our technical environment, starting with the React Native configuration.
+- Discussed the implementation strategy for using Git as our version control system.
+
+### Immediate Next Steps
+- Begin drafting the initial UI/UX design for the mobile app, focusing on the chat interface.
+- Initialize a Git repository at the project root and document the setup process.
+- Start integrating the OpenAI ChatGPT API into the frontend to establish the AI chat functionality.
+
+#Teammates: 
+We have hired Paul to complete some of our development work that needs to be completed. He will report to Alex 
+
+## Appendices
+Additional information, if any.
